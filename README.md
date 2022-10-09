@@ -78,17 +78,18 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
   
 ### Dicionário de Classes e Atributos
 > * **Bit:** [No contexto do código] bit é a menor unidade do vetor de caracteres. Para fins de cálculo, cada posição do vetor corresponde a 1 bit - portanto uma palavra de 44 caracteres corresponde a 44bits para o valor de K<sub>i</sub> na fórmula de codificação de binário para real. 
->   * **Cromossomo:** Corresponde a uma string de 44bits. Este atributo funciona como a "assinatura" de um objeto indivíduo. Os 22 primeiros bits serão utilizados para calcular o atributo X do indivíduo e os últimos 22 bits serão utilizados para calcular o atributo Y. Cada indivíduo possui um cromossomo gerado a partir dos cromossomos de seus pais pela função Crossover e o cálculo de X e Y é realizado através da fórmula de codificação de binário para real.
->   * **Indivíduo:** A partir do cromossomo, cada indivíduo recebe um valor real para seus atributos X e Y. Estes valores serão utilizados para calcular a aptidão do indivíduo. Desta forma, pode-se dizer que cada indíviduo corresponde a uma *solução* para a função F6. 
->   * **Aptidão:** É o meio de determinar o quão próximos da solução (máximo global) os valores de X e Y estão. A instância desta classe possui métodos para calcular a aptidão de cada indivíduo a partir dos valores de X e Y. 
->   * **População:** Uma classe composta por um ArrayList de indivíduos.
->   * **Geração:** Considere uma população inicial "pais". Após passar pelas etapas de Avaliação (Roleta), Cruzamento (Crossover), Mutação (Troca de bits) e Seleção (Elitismo), a população *pais* gerou uma nova população, agora entitulada "filhos". A cada nova população *gerada* a partir de outra damos o nome de geração. Desta forma, podemos dizer que uma geração corresponde ao número de populações distintas geradas. A primeira geração é composta por indivíduos gerados de forma aleatória e recebe o nome de Geração 0, Inicial ou Parental.
->   * **Avaliação:**
->   * **Cruzamento:**
->  * **Mutação:**
->   * **Seleção:**
+> * **Cromossomo:** Corresponde a uma string de 44bits. Este atributo funciona como a "assinatura" de um objeto indivíduo. Os 22 primeiros bits serão utilizados para calcular o atributo X do indivíduo e os últimos 22 bits serão utilizados para calcular o atributo Y. Cada indivíduo possui um cromossomo gerado a partir dos cromossomos de seus pais pela função Crossover e o cálculo de X e Y é realizado através da fórmula de codificação de binário para real.
+> * **Indivíduo:** A partir do cromossomo, cada indivíduo recebe um valor real para seus atributos X e Y. Estes valores serão utilizados para calcular a aptidão do indivíduo. Desta forma, pode-se dizer que cada indíviduo corresponde a uma *solução* para a função F6. 
+> * **Aptidão:** É o meio de determinar o quão próximos da solução (máximo global) os valores de X e Y estão. A instância desta classe possui métodos para calcular a aptidão de cada indivíduo a partir dos valores de X e Y. 
+> * **População:** Uma classe composta por um ArrayList de indivíduos.
+> * **Geração:** Considere uma população inicial "pais". Após passar pelas etapas de Avaliação (Roleta), Cruzamento (Crossover), Mutação (Troca de bits) e Seleção (Elitismo), a população *pais* gerou uma nova população, agora entitulada "filhos". A cada nova população *gerada* a partir de outra damos o nome de geração. Desta forma, podemos dizer que uma geração corresponde ao número de populações distintas geradas. A primeira geração é composta por indivíduos gerados de forma aleatória e recebe o nome de Geração 0, Inicial ou Parental.
+> * **Avaliação:**
+> * **Cruzamento:**
+> * **Mutação:**
+> * **Seleção:**
 
   
+
 
 ### Configurações
 >   
@@ -101,6 +102,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >   * **Taxa de mutação:**
 >   * **Taxa de crossover:**
   
+
 ### Descrição
 >   
 >    <p align="center">
