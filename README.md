@@ -20,7 +20,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 ## O Código
 
   <p align="center">
-    <img width="250" src="https://user-images.githubusercontent.com/61857348/194769879-552a614d-7801-4fe0-8317-2c41897ebee8.png" alt="Tela Inicial">
+    <img width="300" src="https://user-images.githubusercontent.com/61857348/194769879-552a614d-7801-4fe0-8317-2c41897ebee8.png" alt="Tela Inicial">
   </p>
   
 ### Classes
@@ -94,7 +94,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 
 ### Configurações
   
-  <p align="left">
+  <p align="center">
   <img width="550" src="https://user-images.githubusercontent.com/61857348/194770179-a906c85f-7b17-4777-a6a9-939e6d2d2aba.png" alt="Tela Inicial">
   </p>
 
@@ -103,10 +103,199 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
   * **Taxa de mutação:**
   * **Taxa de crossover:**
   
-### Métodos do Algoritmo
-
-  <p align="left">
-  <img width="250" src="https://user-images.githubusercontent.com/61857348/194770182-3083f408-3448-43a3-b6d4-28de229207c6.png" alt="Tela Inicial">
-  </p>
- 
+### Descrição
   
+   <p align="center">
+      <img width="300" src="https://user-images.githubusercontent.com/61857348/194770182-3083f408-3448-43a3-b6d4-28de229207c6.png" alt="Tela Inicial">
+   </p>
+
+  #### Geração de Indivíduos
+  
+  dsadasddasd
+  
+   ```cpp
+    public class Gerador {   
+        public String bits(){ 
+
+            String novo_cromossomo="";
+            Random num_aleatorio = new Random();          
+            int n_bits=44; //Declaração do tamanho da palavra(nº de bits)
+
+            while(n_bits>0){
+                if(num_aleatorio.nextInt(100)<=50){
+                    novo_cromossomo=novo_cromossomo+'1';
+                }
+                else{
+                    novo_cromossomo=novo_cromossomo+'0';
+                }
+                n_bits--;
+            }
+
+            return novo_cromossomo;
+        }
+    }
+```
+      
+      
+  #### Divisão do Cromossomo   
+  
+  dasdasdasd
+      
+   ```cpp
+    public class Gerador {   
+        public String bits(){ 
+
+            String novo_cromossomo="";
+            Random num_aleatorio = new Random();          
+            int n_bits=44; //Declaração do tamanho da palavra(nº de bits)
+
+            while(n_bits>0){
+                if(num_aleatorio.nextInt(100)<=50){
+                    novo_cromossomo=novo_cromossomo+'1';
+                }
+                else{
+                    novo_cromossomo=novo_cromossomo+'0';
+                }
+                n_bits--;
+            }
+
+            return novo_cromossomo;
+        }
+    }
+```
+      
+  #### Cálculo de Aptidão
+  
+  dasdasdas
+      
+   ```cpp
+    public class Gerador {   
+        public String bits(){ 
+
+            String novo_cromossomo="";
+            Random num_aleatorio = new Random();          
+            int n_bits=44; //Declaração do tamanho da palavra(nº de bits)
+
+            while(n_bits>0){
+                if(num_aleatorio.nextInt(100)<=50){
+                    novo_cromossomo=novo_cromossomo+'1';
+                }
+                else{
+                    novo_cromossomo=novo_cromossomo+'0';
+                }
+                n_bits--;
+            }
+
+            return novo_cromossomo;
+        }
+    }
+```
+       
+  #### Seleção por Roleta
+  
+  asdasda
+      
+   ```cpp
+    public class Gerador {   
+        public String bits(){ 
+
+            String novo_cromossomo="";
+            Random num_aleatorio = new Random();          
+            int n_bits=44; //Declaração do tamanho da palavra(nº de bits)
+
+            while(n_bits>0){
+                if(num_aleatorio.nextInt(100)<=50){
+                    novo_cromossomo=novo_cromossomo+'1';
+                }
+                else{
+                    novo_cromossomo=novo_cromossomo+'0';
+                }
+                n_bits--;
+            }
+
+            return novo_cromossomo;
+        }
+    }
+```
+      
+  #### Cruzamento
+  
+  adsdasd
+      
+   ```cpp
+    public class Gerador {   
+        public String bits(){ 
+
+            String novo_cromossomo="";
+            Random num_aleatorio = new Random();          
+            int n_bits=44; //Declaração do tamanho da palavra(nº de bits)
+
+            while(n_bits>0){
+                if(num_aleatorio.nextInt(100)<=50){
+                    novo_cromossomo=novo_cromossomo+'1';
+                }
+                else{
+                    novo_cromossomo=novo_cromossomo+'0';
+                }
+                n_bits--;
+            }
+
+            return novo_cromossomo;
+        }
+    }
+```
+      
+  #### Mutação por troca de bit
+  
+  asdasdasd
+      
+   ```cpp
+    public class Gerador {   
+        public String bits(){ 
+
+            String novo_cromossomo="";
+            Random num_aleatorio = new Random();          
+            int n_bits=44; //Declaração do tamanho da palavra(nº de bits)
+
+            while(n_bits>0){
+                if(num_aleatorio.nextInt(100)<=50){
+                    novo_cromossomo=novo_cromossomo+'1';
+                }
+                else{
+                    novo_cromossomo=novo_cromossomo+'0';
+                }
+                n_bits--;
+            }
+
+            return novo_cromossomo;
+        }
+    }
+```
+       
+  #### Elitismo
+  
+  asdasdasdsad
+      
+   ```cpp
+    public class Gerador {   
+        public String bits(){ 
+
+            String novo_cromossomo="";
+            Random num_aleatorio = new Random();          
+            int n_bits=44; //Declaração do tamanho da palavra(nº de bits)
+
+            while(n_bits>0){
+                if(num_aleatorio.nextInt(100)<=50){
+                    novo_cromossomo=novo_cromossomo+'1';
+                }
+                else{
+                    novo_cromossomo=novo_cromossomo+'0';
+                }
+                n_bits--;
+            }
+
+            return novo_cromossomo;
+        }
+    }
+```
+      
