@@ -194,12 +194,13 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >>   
 >>   Primeiramente é calculada a soma das aptidões de todos os indivíduos de uma população. Em seguida é sorteado um número aleatório entre 0 e o valor dessa soma. Com o número aleatório armazenado, a lista de indivíduos é varrida da primeira posição (0) para a última (99). A cada indivíduo "varrido", sua apdtidão é somada à aptidão dos indivíduos anteriores. O primeiro membro da população cuja esta soma for maior ou igual ao número aleatório gerado é selecionado e um novo número aleatório é gerado. A varredura se reinicia na posição 0 a cada indivíduo selecionado.  
 >>  
->>  Para o exemplo abaixo, considere que a população é composta por 10 indivíduos.  
 >>
 >>    <p align="center">
 >>   <img width="650" src="https://user-images.githubusercontent.com/61857348/194781649-83bc661e-8047-42ff-b15a-ea3f0ddbe859.png" alt="Equação F6">
 >>   </p>
->>  
+>>
+>>  Para o exemplo acima, considere que a população é composta por 10 indivíduos cujas aptidãos são apresentadas em verde na linha Aptidão. Em vermelho é apresentada a aptidão de cada indivíduo somada à de seus antecessores. Note que a cada iteração, um número aleatório entre 0 e a soma total das aptidões é gerado. O primeiro número aleatório (23) é comparado com a aptidão do primeiro indivíduo (8). Como a aptidão é menor, pula para o segundo indivíduo, cuja aptidão somada a de seu antecessor é 10 (8 + 2). Como a aptidão continua sendo menor que o número aleatório, passa para o terceiro indivíduo. Sua aptidão somada à de seus antecessores é 27 (8 + 2 + 17), maior que o número aleatório. Deste forma o terceiro indivíduo é selecionado, outro número aleatório é gerado e a comparação reinicia a partir do primeiro indivíduo novamente.
+>>
 >>    ```cpp
 >>     public void roleta(ArrayList<Individuo> individuos){
 >>         ArrayList<Individuo> aux = new ArrayList<>();
@@ -229,8 +230,15 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >      
 >  #### Cruzamento
 >>   
->>   adsdasd
->>       
+>>   Após a roleta a população está ordenada conforme a seleção dos casais, sendo os indivíduos das posições 0 e 1 da lista um casal, os indivíduos das posições 2 e 3 da lista outro casal e assim sucessivamente. No método crossover, um número aleatório entre 0 e o tamanho máximo do cromossomo (43) é gerado. Este número representa o ponto de corte. O cromossomo é cortado nessa posição - a primeira parte da string cortada (da posição 0 até a posição do número gerado) corresponde à cabeça e a segunda parte (da posição do número gerado até 43) corresponde à cauda. Ambos os cromossomos, do macho e da fêmea, passam por este processo e geram dois filhos: 
+>>
+>>    <p align="center">
+>>   <img width="550" src="https://user-images.githubusercontent.com/61857348/194784626-aff4bd79-3078-4263-9b27-978fcbf640fd.png" alt="Equação F6">
+>>   </p>
+>>
+>> - a cabeça do macho concatenada com a cauda da fêmea gera o cromossomo do primeiro filho
+>> - a cabeça da fêmea concatenada com a cauda do macho gera o cromossomo do segundo filho
+>>
 >>    ```cpp
 >>     public void crossover(ArrayList<Individuo> individuos, int geracao){
 >>         int i;
@@ -257,10 +265,20 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >>         }     
 >>     }
 >> ```
->>       
+>       
 >  #### Mutação por troca de bit
->>   
->>   asdasdasd
+>>
+>>   Durante a mutação é gerado um valor aleatório entre 0 e 1 para cada bit do cromossomo. Se este valor for menor ou igual à taxa de mutação, o bit correspondente é trocado:
+>>
+>>  - se for 0 é trocado por 1
+>>  - se for 1 é trocado por 0
+>>
+>>      <p align="center">
+>>   <img width="550" src="https://user-images.githubusercontent.com/61857348/194785289-315349e2-1c64-4d5e-8fbd-a6b0c922964c.png" alt="Mutação">
+>>   </p>
+>>
+>>  A taxa de mutação é pré-definida em 0.008 (0.8%) e seu valor pode ser alterado no menu de configurações. 
+>>  Este processo é realizado com todos os bits dos cromossomos de todos os indivíduos de uma população.
 >>       
 >>    ```cpp
 >>     public void inversao_de_bit(ArrayList<Individuo> individuos){
@@ -295,7 +313,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >       
 >  #### Elitismo
 >>   
->>   asdasdasdsad
+>>   Primeiramente a população (lista) de pais é ordenada por ordem decrescente de aptidão, sendo o primeiro indivíduo da lista o de maior aptidão, o segundo indivíduo da lista o de segunda maior aptidão e assim por diante. Em seguida um filho aleatório é substituído, na população de filhos, pelo pai de maior aptidão (o primeiro indivíduo da população de pais). Por fim a lista de pais é eliminada e a lista de filhos passa ser a nova lista de pais.
 >>       
 >>    ```cpp
 >>       organizador.ordenar(pais.getIndividuos());
