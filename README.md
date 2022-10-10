@@ -83,10 +83,12 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 > * **Aptidão:** É o meio de determinar o quão próximos da solução (máximo global) os valores de X e Y estão. A instância desta classe possui métodos para calcular a aptidão de cada indivíduo a partir dos valores de X e Y. 
 > * **População:** Uma classe composta por um ArrayList de indivíduos.
 > * **Geração:** Considere uma população inicial "pais". Após passar pelas etapas de Avaliação (Roleta), Cruzamento (Crossover), Mutação (Troca de bits) e Seleção (Elitismo), a população *pais* gerou uma nova população, agora entitulada "filhos". A cada nova população *gerada* a partir de outra damos o nome de geração. Desta forma, podemos dizer que uma geração corresponde ao número de populações distintas geradas. A primeira geração é composta por indivíduos gerados de forma aleatória e recebe o nome de Geração 0, Inicial ou Parental.
-> * **Avaliação:** É a técnica de aferir o quão "apto" aquele indivíduo é para solucionar o problema. No caso do algoritmo em questão, a aptidão corresponde ao quão próximo da solução aquele indivíduo está.
-> * **Cruzamento:** É a técnica de gerar novos indivíduos a partir dos indivíduos existentes, mantendo características desejáveis. Existem diversos métodos de realizar o cruzamento. Neste algortimo foi utilizado a técnica de Crossover.
-> * **Mutação:** É a técnica responsável por promover modificações no cromossomo do invidíduo. Ela permite que o algoritmo saia de "ótimos locais" promovendo o surgimento de características independentes das de seus pais. A técnica de mutação utilizada neste algoritmo é a mutação por troca de bits.
-> * **Seleção:** É a técnica para selecionar quais indivíduos formarão os casais para a técnica de cruzamento. Existem diversas formas de selecionar indivíduos. Neste algoritmo foi utilizada a técnica de seleção por roleta.
+> * **Avaliação:**
+> * **Cruzamento:**
+> * **Mutação:**
+> * **Seleção:**
+
+  
 
 
 ### Configurações
@@ -95,7 +97,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >   <img width="550" src="https://user-images.githubusercontent.com/61857348/194770179-a906c85f-7b17-4777-a6a9-939e6d2d2aba.png" alt="Tela Inicial">
 >   </p>
 > 
->   * **Tamanho da população:** Quantidade de indivíduos que compõem uma população, ou seja, é o tamanho da ArrayList<Individuo>.
+>   * **Tamanho da população:** Quantidade de indivíduos que compõem uma população, ou seja, é o tamanho da ArrayList de indivíduos.
 >   * **Quantidade de gerações:** Quantidade de populações máxima que o algoritmo pode atingir. Controla o número máximo de iterações que o programa realizará para buscar soluções.
 >   * **Taxa de mutação:** Valor de referência para a ocorrência (ou não) de uma mutação. 
 >   * **Taxa de crossover:** Valor de referência para a ocorrência (ou não) de um cruzamento.
@@ -107,6 +109,13 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >       <img width="300" src="https://user-images.githubusercontent.com/61857348/194770182-3083f408-3448-43a3-b6d4-28de229207c6.png" alt="Tela Inicial">
 >    </p>
 > 
+>   O algoritmo possui dois modos de execução:
+>
+>   - *Apresentação:* mostra o passo a passo da execução através de telas explicativas. O algoritmo roda apenas para explicar a execução, sem buscar pela solução global.
+>   - *Rodar Algoritmo* roda o algoritmo sem interrupções até encontrar o indivíduo com aptidão maior que a precisão estabelecida. Por padrão o algoritmo é pré-definido para rodar até encontrar o primeiro indivíduo de aptidão próxima de 1, com precisão de 7 casas decimais - ou seja, o algoritmo roda até encontrar o primeiro indivíduo com aptidao maior ou igual a 0,9999999.
+>  
+>   A busca pela solução é realizada em ciclos. Cada ciclo é composto pelas etapas mostradas abaixo:
+>  
 >   #### Geração de Indivíduos
 >>   
 >>   O algoritmo inicia gerando os primeiros indivíduos de forma aleatória ao chamar esta função como parâmetro do construtor da classe Indivíduo. O tamanho do cromossomo pode ser alterado através da variável *n_bits*:
@@ -194,7 +203,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >>  
 >>
 >>    <p align="center">
->>   <img width="650" src="https://user-images.githubusercontent.com/61857348/194786015-b451cdb5-33d3-4b38-b72f-c13f13a39ceb.png" alt="Equação F6">
+>>   <img width="650" src="https://user-images.githubusercontent.com/61857348/194781649-83bc661e-8047-42ff-b15a-ea3f0ddbe859.png" alt="Equação F6">
 >>   </p>
 >>
 >>  Para o exemplo acima, considere que a população é composta por 10 indivíduos cujas aptidãos são apresentadas em verde na linha Aptidão. Em vermelho é apresentada a aptidão de cada indivíduo somada à de seus antecessores. Note que a cada iteração, um número aleatório entre 0 e a soma total das aptidões é gerado. O primeiro número aleatório (23) é comparado com a aptidão do primeiro indivíduo (8). Como a aptidão é menor, pula para o segundo indivíduo, cuja aptidão somada a de seu antecessor é 10 (8 + 2). Como a aptidão continua sendo menor que o número aleatório, passa para o terceiro indivíduo. Sua aptidão somada à de seus antecessores é 27 (8 + 2 + 17), maior que o número aleatório. Deste forma o terceiro indivíduo é selecionado, outro número aleatório é gerado e a comparação reinicia a partir do primeiro indivíduo novamente.
