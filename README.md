@@ -83,12 +83,10 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 > * **Aptidão:** É o meio de determinar o quão próximos da solução (máximo global) os valores de X e Y estão. A instância desta classe possui métodos para calcular a aptidão de cada indivíduo a partir dos valores de X e Y. 
 > * **População:** Uma classe composta por um ArrayList de indivíduos.
 > * **Geração:** Considere uma população inicial "pais". Após passar pelas etapas de Avaliação (Roleta), Cruzamento (Crossover), Mutação (Troca de bits) e Seleção (Elitismo), a população *pais* gerou uma nova população, agora entitulada "filhos". A cada nova população *gerada* a partir de outra damos o nome de geração. Desta forma, podemos dizer que uma geração corresponde ao número de populações distintas geradas. A primeira geração é composta por indivíduos gerados de forma aleatória e recebe o nome de Geração 0, Inicial ou Parental.
-> * **Avaliação:**
-> * **Cruzamento:**
-> * **Mutação:**
-> * **Seleção:**
-
-  
+> * **Avaliação:** É a técnica de aferir o quão "apto" aquele indivíduo é para solucionar o problema. No caso do algoritmo em questão, a aptidão corresponde ao quão próximo da solução aquele indivíduo está.
+> * **Cruzamento:** É a técnica de gerar novos indivíduos a partir dos indivíduos existentes, mantendo características desejáveis. Existem diversos métodos de realizar o cruzamento. Neste algortimo foi utilizado a técnica de Crossover.
+> * **Mutação:** É a técnica responsável por promover modificações no cromossomo do invidíduo. Ela permite que o algoritmo saia de "ótimos locais" promovendo o surgimento de características independentes das de seus pais. A técnica de mutação utilizada neste algoritmo é a mutação por troca de bits.
+> * **Seleção:** É a técnica para selecionar quais indivíduos formarão os casais para a técnica de cruzamento. Existem diversas formas de selecionar indivíduos. Neste algoritmo foi utilizada a técnica de seleção por roleta.
 
 
 ### Configurações
