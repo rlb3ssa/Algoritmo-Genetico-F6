@@ -200,10 +200,9 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >  #### Seleção por Roleta
 >>   
 >>   Primeiramente é calculada a soma das aptidões de todos os indivíduos de uma população. Em seguida é sorteado um número aleatório entre 0 e o valor dessa soma. Com o número aleatório armazenado, a lista de indivíduos é varrida da primeira posição (0) para a última (99). A cada indivíduo "varrido", sua apdtidão é somada à aptidão dos indivíduos anteriores. O primeiro membro da população cuja esta soma for maior ou igual ao número aleatório gerado é selecionado e um novo número aleatório é gerado. A varredura se reinicia na posição 0 a cada indivíduo selecionado.  
->>  
 >>
 >>    <p align="center">
->>   <img width="650" src="https://user-images.githubusercontent.com/61857348/194781649-83bc661e-8047-42ff-b15a-ea3f0ddbe859.png" alt="Equação F6">
+>>   <img width="650" src="https://user-images.githubusercontent.com/61857348/194787280-321c6918-5814-458a-8700-f7753dab44ab.png" alt="Equação F6">
 >>   </p>
 >>
 >>  Para o exemplo acima, considere que a população é composta por 10 indivíduos cujas aptidãos são apresentadas em verde na linha Aptidão. Em vermelho é apresentada a aptidão de cada indivíduo somada à de seus antecessores. Note que a cada iteração, um número aleatório entre 0 e a soma total das aptidões é gerado. O primeiro número aleatório (23) é comparado com a aptidão do primeiro indivíduo (8). Como a aptidão é menor, pula para o segundo indivíduo, cuja aptidão somada a de seu antecessor é 10 (8 + 2). Como a aptidão continua sendo menor que o número aleatório, passa para o terceiro indivíduo. Sua aptidão somada à de seus antecessores é 27 (8 + 2 + 17), maior que o número aleatório. Deste forma o terceiro indivíduo é selecionado, outro número aleatório é gerado e a comparação reinicia a partir do primeiro indivíduo novamente.
