@@ -97,10 +97,10 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >   <img width="550" src="https://user-images.githubusercontent.com/61857348/194770179-a906c85f-7b17-4777-a6a9-939e6d2d2aba.png" alt="Tela Inicial">
 >   </p>
 > 
->   * **Tamanho da população:**
->   * **Quantidade de gerações:**
->   * **Taxa de mutação:**
->   * **Taxa de crossover:**
+>   * **Tamanho da população:** Quantidade de indivíduos que compõem uma população, ou seja, é o tamanho da ArrayList<Individuo>.
+>   * **Quantidade de gerações:** Quantidade de populações máxima que o algoritmo pode atingir. Controla o número máximo de iterações que o programa realizará para buscar soluções.
+>   * **Taxa de mutação:** Valor de referência para a ocorrência (ou não) de uma mutação. 
+>   * **Taxa de crossover:** Valor de referência para a ocorrência (ou não) de um cruzamento.
   
 
 ### Descrição
