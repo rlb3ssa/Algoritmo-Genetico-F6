@@ -22,7 +22,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
   
 
   <p align="center">
-  <img width="300" src="https://user-images.githubusercontent.com/61857348/194788403-d28add02-a2d8-4e38-9202-ad15e3362ffc.png" alt="Função F6">
+  <img width="700" src="https://user-images.githubusercontent.com/61857348/194788403-d28add02-a2d8-4e38-9202-ad15e3362ffc.png" alt="Função F6">
   </p>
   
 
