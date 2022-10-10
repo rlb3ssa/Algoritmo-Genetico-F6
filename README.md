@@ -196,7 +196,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >>  
 >>
 >>    <p align="center">
->>   <img width="650" src="https://user-images.githubusercontent.com/61857348/194781649-83bc661e-8047-42ff-b15a-ea3f0ddbe859.png" alt="Equação F6">
+>>   <img width="650" src="https://user-images.githubusercontent.com/61857348/194786015-b451cdb5-33d3-4b38-b72f-c13f13a39ceb.png" alt="Equação F6">
 >>   </p>
 >>
 >>  Para o exemplo acima, considere que a população é composta por 10 indivíduos cujas aptidãos são apresentadas em verde na linha Aptidão. Em vermelho é apresentada a aptidão de cada indivíduo somada à de seus antecessores. Note que a cada iteração, um número aleatório entre 0 e a soma total das aptidões é gerado. O primeiro número aleatório (23) é comparado com a aptidão do primeiro indivíduo (8). Como a aptidão é menor, pula para o segundo indivíduo, cuja aptidão somada a de seu antecessor é 10 (8 + 2). Como a aptidão continua sendo menor que o número aleatório, passa para o terceiro indivíduo. Sua aptidão somada à de seus antecessores é 27 (8 + 2 + 17), maior que o número aleatório. Deste forma o terceiro indivíduo é selecionado, outro número aleatório é gerado e a comparação reinicia a partir do primeiro indivíduo novamente.
