@@ -16,6 +16,9 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 ## Algoritmo Genético
 
 
+<p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/61857348/194787726-0ef0e9f9-df87-4e8a-aa1c-70bef235fab8.png" alt="Função F6">
+  </p>
 
 ## O Código
    <p align="center">
