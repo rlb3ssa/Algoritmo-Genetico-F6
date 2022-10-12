@@ -139,7 +139,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >   O algoritmo possui dois modos de execução:
 >
 >   - *Apresentação:* mostra o passo a passo da execução através de telas explicativas. O algoritmo roda apenas para explicar a execução, sem buscar pela solução global.
->   - *Rodar Algoritmo* roda o algoritmo sem interrupções até encontrar o indivíduo com aptidão maior que a precisão estabelecida. Por padrão o algoritmo é pré-definido para rodar até encontrar o primeiro indivíduo de aptidão próxima de 1, com precisão de 7 casas decimais - ou seja, o algoritmo roda até encontrar o primeiro indivíduo com aptidao maior ou igual a 0,9999999.
+>   - *Rodar Algoritmo:* roda o algoritmo sem interrupções até encontrar o indivíduo com aptidão maior que a precisão estabelecida. Por padrão o algoritmo é pré-definido para rodar até encontrar o primeiro indivíduo de aptidão próxima de 1, com precisão de 7 casas decimais - ou seja, o algoritmo roda até encontrar o primeiro indivíduo com aptidao maior ou igual a 0,9999999.
 >  
 >   A busca pela solução é realizada em ciclos. Cada ciclo é composto pelas etapas mostradas abaixo:
 >  
