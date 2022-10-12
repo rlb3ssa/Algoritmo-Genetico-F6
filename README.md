@@ -21,15 +21,27 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 ## Algoritmo Genético
 
 
-<p align="center">
+  <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/61857348/194787726-0ef0e9f9-df87-4e8a-aa1c-70bef235fab8.png" alt="Função F6">
   </p>
-  
 
+  Um algoritmo genético (GA) é uma técnica utilizada para achar soluções aproximadas em problemas de otimização e busca. É um tipo de algoritmo evolutivo que usa técnicas inspiradas em processos da natureza como hereditariedade, mutação, seleção natural e recombinação. A imagem acima ilustra este ciclo e cada um dos processos é representado por uma das etapas dentro das elipses.
+  
+  * **Hereditariedade:** É a área que analisa como características são transmitidas entre as populações. A palavra chave para compreender a hereditariedade é o DNA. Nele estão contidas as informações que manifestarão as características do indivíduos, como forma, cor, tamanho etc. Nos seres vivos, encontramos os DNA dentro de uma estrutura chamada cromossomo, que fica no interior das células. No código, cada indíviduo é representado por um cromossomo, que na maioria das vezes trata-se de uma palavra binária (string/vetor de caracteres composto por 0s e 1s). Imagine, por exemplo, uma indivíduo A com cromossomo 000111 e um indivíduo B com o cromossomo 111000. Supondo que a divisão dos cromossomos seja feita no meio da string, o cruzamento do indivíduo A com o B pode gerar indivíduos 111111 ou 000000. A análise dessa transmissão de características entre gerações de indivíduos é chamada hereditariedade. *A hereditariedade é representada no algortimo genético pela etapa de Cruzamento*.
+  * **Mutação:** A mutação é um processo que ocorre naturalmente com os seres vivos. Ela permite o surgimento ou desaparecimento de características que podem ser favoráveis ou não para a sobrevivência de um indivíduo. Isso promove variabilidade, o que é muito importante num meio ambiente dinâmico. No contexto do código, a mutação é a etapa por promover uma mudança independente das características de seus progenitores. Imagine por exemplo dois indivíduos semelhantes realizando cruzamentos: seus filhos e descendentes terão características semelhantes se a evolução depender exclusivamente da hereditariedade. Num contexto de busca, isso é uma das causas de muitos algoritmos entrarem em um loop infinito em ótimos locais, sem possibilidade de sair deles. A mutação provê maior probabilidade de ótimos locais serem superados. *A mutação é representada no algortimo genético pela etapa de Cruzamento* 
+  * **Seleção natural:** 
+  * **Recombinação:**     
+  
+  
   <p align="center">
   <img width="700" src="https://user-images.githubusercontent.com/61857348/194788403-d28add02-a2d8-4e38-9202-ad15e3362ffc.png" alt="Função F6">
   </p>
   
+   Para informações técnicas detalhadas sobre o funcionamento de um algoritmo genético, acesse: 
+  
+  * PDF: <http://www.inf.ufsc.br/~mauro.roisenberg/ine5377/Cursos-ICA/CE-intro_apost.pdf>
+  * Videoaulas: <https://www.youtube.com/watch?v=E_C-7adWypU&list=PLvyE37p0v_yTjH-IUJWbp14_6WeON80u5>
+
 
 ## O Código
    <p align="center">
