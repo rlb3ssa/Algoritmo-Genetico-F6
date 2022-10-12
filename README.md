@@ -46,7 +46,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 
 ## O Código
    <p align="center">
-     <img width="300" src="https://user-images.githubusercontent.com/61857348/194769879-552a614d-7801-4fe0-8317-2c41897ebee8.png" alt="Tela Inicial">
+     <img width="300" src="https://user-images.githubusercontent.com/61857348/195418983-d4a890cd-8f40-447a-830f-5fd06dd1c0ac.png" alt="Fluxo do ciclo">
    </p>
    
 ### Classes
