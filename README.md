@@ -145,7 +145,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >  
 >   #### Geração de Indivíduos
 >>   
->>   O algoritmo inicia gerando os primeiros indivíduos de forma aleatória ao chamar esta função como parâmetro do construtor da classe Indivíduo. O tamanho do cromossomo pode ser alterado através da variável *n_bits*:
+>>   O algoritmo inicia gerando os primeiros indivíduos de forma aleatória ao chamar esta função como parâmetro do construtor da classe Indivíduo. O método da classe retorna uma String e o tamanho do cromossomo pode ser alterado através da variável *n_bits*:
 >>   
 >>    ```cpp
 >>     public class Gerador {   
@@ -232,7 +232,7 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >>   <img width="650" src="https://user-images.githubusercontent.com/61857348/194787280-321c6918-5814-458a-8700-f7753dab44ab.png" alt="Equação F6">
 >>   </p>
 >>
->>  Para o exemplo acima, considere que a população é composta por 10 indivíduos cujas aptidãos são apresentadas em verde na linha Aptidão. Em vermelho é apresentada a aptidão de cada indivíduo somada à de seus antecessores. Note que a cada iteração, um número aleatório entre 0 e a soma total das aptidões é gerado. O primeiro número aleatório (23) é comparado com a aptidão do primeiro indivíduo (8). Como a aptidão é menor, pula para o segundo indivíduo, cuja aptidão somada a de seu antecessor é 10 (8 + 2). Como a aptidão continua sendo menor que o número aleatório, passa para o terceiro indivíduo. Sua aptidão somada à de seus antecessores é 27 (8 + 2 + 17), maior que o número aleatório. Deste forma o terceiro indivíduo é selecionado, outro número aleatório é gerado e a comparação reinicia a partir do primeiro indivíduo novamente.
+>>  Para o exemplo acima, considere que a população é composta por 10 indivíduos cujas aptidãos são apresentadas em verde na linha Aptidão. Em vermelho é apresentada a aptidão de cada indivíduo somada à de seus antecessores. Note que a cada iteração, um número aleatório entre 0 e 76 (soma total das aptidões) é gerado. O primeiro número aleatório (23) é comparado com a aptidão do primeiro indivíduo (8). Como a aptidão é menor, pula para o segundo indivíduo, cuja aptidão somada a de seu antecessor é 10 (8 + 2). Como a aptidão continua sendo menor que o número aleatório, passa para o terceiro indivíduo. Sua aptidão somada à de seus antecessores é 27 (8 + 2 + 17), maior que o número aleatório. Deste forma o terceiro indivíduo é selecionado, outro número aleatório é gerado e a comparação reinicia a partir do primeiro indivíduo novamente. 
 >>
 >>    ```cpp
 >>     public void roleta(ArrayList<Individuo> individuos){
