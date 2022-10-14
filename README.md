@@ -6,17 +6,6 @@ A pasta [*codigo*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tree/main/co
 
 A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tree/main/projetoNetbeans) contém os arquivos dispostos conforme um projeto NetBeans.
 
-## Função F6
-
-  <p align="center">
-  <img width="300" src="https://user-images.githubusercontent.com/61857348/194768865-146966e2-6dcc-4025-80cf-de37acd4f585.png" alt="Função F6">
-  </p>
-
-  A função F6, conhecida como Schaffer F6, é uma função de teste que inclui muitas oscilações/picos para os quais é difícil para as técnicas de escalada convergir (os picos são conhecidos como ótimos locais). A função F6 é projetada para ter seu pico na origem com valor um e seu domínio compreende os valores de -100 a +100. A equação da função é descrita na imagem abaixo:
-
-  <p align="center">
-  <img width="300" src="https://user-images.githubusercontent.com/61857348/194788851-133ea507-ab59-4c81-9531-bcb654d017e7.png" alt="Função F6">
-  </p>
   
 ## Algoritmo Genético
 
@@ -43,7 +32,19 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
   * PDF: <http://www.inf.ufsc.br/~mauro.roisenberg/ine5377/Cursos-ICA/CE-intro_apost.pdf>
   * Videoaulas: <https://www.youtube.com/watch?v=E_C-7adWypU&list=PLvyE37p0v_yTjH-IUJWbp14_6WeON80u5>
 
+## Função F6
 
+  <p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/61857348/194768865-146966e2-6dcc-4025-80cf-de37acd4f585.png" alt="Função F6">
+  </p>
+
+  A função F6, conhecida como Schaffer F6, é uma função de teste que inclui muitas oscilações/picos para os quais é difícil para as técnicas de escalada convergir (os picos são conhecidos como ótimos locais). A função F6 é projetada para ter seu pico na origem com valor um e seu domínio compreende os valores de -100 a +100. A equação da função é descrita na imagem abaixo:
+
+  <p align="center">
+  <img width="300" src="https://user-images.githubusercontent.com/61857348/194788851-133ea507-ab59-4c81-9531-bcb654d017e7.png" alt="Função F6">
+  </p>
+  
+  
 ## O Código
    <p align="center">
      <img width="700" src="https://user-images.githubusercontent.com/61857348/195418983-d4a890cd-8f40-447a-830f-5fd06dd1c0ac.png" alt="Fluxo do ciclo">
