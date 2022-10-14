@@ -56,25 +56,25 @@ A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tre
 >  
 > [*Algoritmo-Genetico-F6*](https://github.com/rlBessa/Algoritmo-Genetico-F6/blob/main/codigo/AlgoritmoGeneticoF6.java) é a classe principal do projeto. Nela ocorre toda a interação entre as classes.
 > 
-> [*Gerador*](https://github.com/rlBessa/Algoritmo-Genetico-F6/blob/main/codigo/AlgoritmoGeneticoF6.java) é a classe responsável por gerar cada bit do cromossomo de forma aleatória.
+> [*Gerador*](https://github.com/rlBessa/Algoritmo-Genetico-F6/blob/main/codigo/AlgoritmoGeneticoF6.java) é a classe responsável por gerar cada bit do cromossomo de forma aleatória. Esta função não possui parâmetros na chamada e retorna uma string de 44 caracteres representando um número binário.
 >> 
 >>   ```cpp
 >>     Gerador gerador = new Gerador();
 >> ```
 >
-> [*Individuo*](https://github.com/rlBessa/Algoritmo-Genetico-F6/blob/main/codigo/AlgoritmoGeneticoF6.java) é a classe que representa possíveis soluções para o problema. Cada instância desta classe representa um candidato à solução. O principal atributo da classe é o cromossomo - todos as outras atribuições ocorrem a partir dele.
+> [*Individuo*](https://github.com/rlBessa/Algoritmo-Genetico-F6/blob/main/codigo/AlgoritmoGeneticoF6.java) é a classe que representa possíveis soluções para o problema. Cada instância desta classe representa um candidato à solução. O principal atributo da classe é o cromossomo - todos as outras atribuições ocorrem a partir dele. O construtor da classe requer uma string (número binário).
 >> 
 >>   ```cpp
 >>     Individuo individuo = new Individuo(String binario);
 >> ```
 >
-> [*Populacao*](https://github.com/rlBessa/Algoritmo-Genetico-F6/blob/main/codigo/AlgoritmoGeneticoF6.java) é a classe que corresponde a um conjunto determinado de indivíduos (ArrayList de objetos). O tamanho da população é pré-definido em 100 indivíduos, mas pode ser alterado no menu de configurações. 
+> [*Populacao*](https://github.com/rlBessa/Algoritmo-Genetico-F6/blob/main/codigo/AlgoritmoGeneticoF6.java) é a classe que corresponde a um conjunto determinado de indivíduos (ArrayList de objetos). Seu construtor recebe como parâmetro um ArrayList de objetos da classe Individuo. O tamanho da população é pré-definido em 100 indivíduos, mas pode ser alterado no menu de configurações. 
 >> 
 >>   ```cpp
 >>     Populacao populacao = new Populacao(ArrayList<Individuo>);
 >> ```
 >
-> [*Ordenador*](https://github.com/rlBessa/Algoritmo-Genetico-F6/blob/main/codigo/AlgoritmoGeneticoF6.java) é a classe cuja instância é responsável por ordenar uma população por ordem decrescente de aptidão, ou seja, o primeiro indivíduo do ArrayList possui a maior aptidão, o segundo possui a segunda maior e assim por diante.
+> [*Ordenador*](https://github.com/rlBessa/Algoritmo-Genetico-F6/blob/main/codigo/AlgoritmoGeneticoF6.java) é a classe cuja instância é responsável por ordenar uma população por ordem decrescente de aptidão, ou seja, o primeiro indivíduo do ArrayList possui a maior aptidão, o segundo possui a segunda maior e assim por diante. 
 >> 
 >>   ```cpp
 >>    Ordenador ordenador = new Ordenador();
