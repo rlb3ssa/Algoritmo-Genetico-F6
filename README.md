@@ -1,6 +1,6 @@
 # Algoritmo-Genetico-F6
 
-Este projeto em java utiliza conceitos básicos de um algoritmo genético para maximizar a função F6. 
+Este projeto em java utiliza conceitos básicos de um algoritmo genético para maximizar a função F6. Esta é uma aplicação simples para ilustrar o funcionamento de um algoritmo genético. 
 
 A pasta [*codigo*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tree/main/codigo) contém todas as classes e imagens utilizadas no algoritmo e na escrita deste documento.
 
