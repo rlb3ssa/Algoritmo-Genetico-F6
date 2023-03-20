@@ -4,8 +4,6 @@ Este projeto em java utiliza conceitos básicos de um algoritmo genético para m
 
 A pasta [*codigo*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tree/main/codigo) contém todas as classes e imagens utilizadas no algoritmo e na escrita deste documento.
 
-A pasta [*projetoNetbeans*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tree/main/projetoNetbeans) contém os arquivos dispostos conforme um projeto NetBeans.
-
   
 ## Algoritmo Genético
 
