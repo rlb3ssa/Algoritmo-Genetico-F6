@@ -36,12 +36,13 @@ A pasta [*codigo*](https://github.com/rlBessa/Algoritmo-Genetico-F6/tree/main/co
   <img width="300" src="https://user-images.githubusercontent.com/61857348/194768865-146966e2-6dcc-4025-80cf-de37acd4f585.png" alt="Função F6">
   </p>
 
-  A função F6, conhecida como Schaffer F6, é uma função de teste que inclui muitas oscilações/picos para os quais é difícil para as técnicas de escalada convergir (os picos são conhecidos como ótimos locais). A função F6 é projetada para ter seu pico na origem com valor um e seu domínio compreende os valores de -100 a +100. A equação da função é descrita na imagem abaixo:
+  A função F6, conhecida como Schaffer F6, é uma função de teste que inclui muitas oscilações/picos para os quais é difícil para as técnicas de escalada convergir (os picos são conhecidos como ótimos locais). A função F6 é projetada para ter seu pico na origem com valor 1 e seu domínio compreende os valores de -100 a +100. A equação da função é descrita na imagem abaixo:
 
   <p align="center">
   <img width="300" src="https://user-images.githubusercontent.com/61857348/194788851-133ea507-ab59-4c81-9531-bcb654d017e7.png" alt="Função F6">
   </p>
-  
+
+  Em resumo, vamos utilizar o algoritmo genético para encontrar soluções cada vez mais próximas da melhor solução possível. Neste caso sabemos que os melhores indivíduos terão aptidão próximas a 1 mas em geral o que buscamos com os algoritmos genéticos é descobrir possíveis soluções sem ter um valor de referência. A função F6 foi escolhida justamente para testar o funcionamento do modelo.
   
 ## O Código
 
