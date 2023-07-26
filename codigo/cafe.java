@@ -1,43 +1,41 @@
-public CaféGrátis draco(Double doacaoAlunos, Pessoa você, CuidarDaCafeteira statusDaLimpeza){
+public Draco cafeGratis(Double doacaoAlunos, Pessoa você, Boolean vaiTerQueDeletarCafeteira){
+            if(vaiTerQueDeletarCafeteira){
+                   cafeteira.delete();
+                   system.shutdown();
+            }
+            
             if(doacaoAlunos == 0){
-                cafeteira.suprimentos == 0;
-                return false;
+                   cafeteira.suprimentos = 0;
+                   cafeteira.cafeGratis = false;
+                   return false;
             } else {
-                cafeteira.suprimentos == 100;
-                cafeteira.cafeGratis == true;
+                   cafeteira.suprimentos = 100;
+                   cafeteira.cafeGratis = true;
             }
 
             if(você.consomeCafe()){
-                cafeteira.limpeza = você.limparCafeteira();
+                   cafeteira.limpeza = você.limparCafeteira();
           
-                if(você.desculpa == "mas quando eu cheguei já estava pronto, eu só bebi"){
-                    nãoImporta.limpaMesmoAssim = true;
-                }
+                   if(você.desculpa == "mas quando eu cheguei já estava pronto, eu só bebi"){
+                       naoImporta.limpaMesmoAssim = true;
+                   }
 
-                if(você.desculpa == "mas quando eu cheguei já estava sujo"){
-                    nãoImporta.limpaMesmoAssim = true;
-                    você.chamarAtençãoDeQuemDeixouSujo();
-                } else {
-                    nãoImporta.limpaMesmoAssim = true;
-                }
-                        
+                   if(você.desculpa == "mas quando eu cheguei já estava sujo"){
+                       naoImporta.limpaMesmoAssim = true;
+                       você.chamarAtencaoDeQuemDeixouSujo();
+                   } 
+                               
+                   else {
+                       naoImporta.limpaMesmoAssim = true;
+                   }          
             }
 
             if(cafeteira.limpeza == true){
-                statusDaLimpeza--;
-            } else {
-                statusDaLimpeza++;
+                   vaiTerQueDeletarCafeteira = false;
+            } 
+            else {
+                   vaiTerQueDeletarCafeteira = true;
             }
-
-            switch(statusDaLimpeza){
-              case 2: cafeteira.delete();
-               break;
-
-              case 1: cafateira.suspender("2 semanas");
-                break; 
-
-              default: cafeteira.continua(true);
-                break;
-                
-            }                            
+            
+            return vaiTerQueDeletarCafeteira;
 }
