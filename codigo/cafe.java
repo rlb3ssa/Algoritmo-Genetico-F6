@@ -1,7 +1,7 @@
 public CaféGrátis draco(Double doacaoAlunos, Pessoa você, CuidarDaCafeteira statusDaLimpeza){
             if(doacaoAlunos == 0){
                 cafeteira.suprimentos == 0;
-                cafeteira.cafeGratis == false;
+                return false;
             } else {
                 cafeteira.suprimentos == 100;
                 cafeteira.cafeGratis == true;
@@ -10,16 +10,17 @@ public CaféGrátis draco(Double doacaoAlunos, Pessoa você, CuidarDaCafeteira s
             if(você.consomeCafe()){
                 cafeteira.limpeza = você.limparCafeteira();
           
-                if(você.desculpa = "mas quando eu cheguei já estava pronto, eu só bebi"){
+                if(você.desculpa == "mas quando eu cheguei já estava pronto, eu só bebi"){
                     nãoImporta.limpaMesmoAssim = true;
                 }
 
-                if(você.desculpa = "mas quando eu cheguei já estava sujo"){
+                if(você.desculpa == "mas quando eu cheguei já estava sujo"){
                     nãoImporta.limpaMesmoAssim = true;
                     você.chamarAtençãoDeQuemDeixouSujo();
                 } else {
                     nãoImporta.limpaMesmoAssim = true;
                 }
+                        
             }
 
             if(cafeteira.limpeza == true){
