@@ -1,42 +1,45 @@
-public CaféGrátis draco(Double doacaoAlunos, Pessoa você, CuidarDaCafeteira status){
-                if(doacaoAlunos == 0){
-                        cafeteira.suprimentos == 0;
-                        cafeteira.cafeGratis == false;
-                } else{
-                        cafeteira.suprimentos == 100;
-                        cafeteira.cafeGratis == true;
+public CaféGrátis draco(Double doacaoAlunos, Pessoa você, CuidarDaCafeteira statusDaLimpeza){
+            if(doacaoAlunos == 0){
+                cafeteira.suprimentos == 0;
+                cafeteira.cafeGratis == false;
+            } else {
+                cafeteira.suprimentos == 100;
+                cafeteira.cafeGratis == true;
+            }
+
+            if(você.consomeCafe()){
+                cafeteira.limpeza = você.limparCafeteira();
+          
+                if(você.desculpa = "mas quando eu cheguei já estava pronto, eu só bebi"){
+                    nãoImporta.limpaMesmoAssim = true;
+                    cafeteira.limpeza = você.limparCafeteira();
                 }
 
-                if(você.consomeCafe()){
-                        cafeteira.limpeza = você.limparCafeteira();
-
-                        if(desculpa = "mas quando eu cheguei já estava pronto, eu só bebi"){
-                                nãoImporta.limpaMesmoAssim = true;
-                                cafeteira.limpeza = você.limparCafeteira();
-                        }
-
-                        if(desculpa = "mas quando eu cheguei já estava sujo"){
-                                nãoImporta.limpaMesmoAssim = true;
-                                cafeteira.limpeza = você.limparCafeteira();
-                                você.chamarAtençãoDeQuemDeixouSujo();
-                        }
+                if(você.desculpa = "mas quando eu cheguei já estava sujo"){
+                    nãoImporta.limpaMesmoAssim = true;
+                    cafeteira.limpeza = você.limparCafeteira();
+                    você.chamarAtençãoDeQuemDeixouSujo();
+                }
+                else {
+                    nãoImporta.limpaMesmoAssim = true;
+                    cafeteira.limpeza = você.limparCafeteira();
                 }
 
-                if(cafeteira.limpeza == true){
-                        status--;
-                }
-                else{
-                        status++;
-                }
+            if(cafeteira.limpeza == true){
+                statusDaLimpeza--;
+            } else {
+                statusDaLimpeza++;
+            }
 
-                if(status>1){
-                        cafeteira.delete();
-                }
-                if( status == 1){
-                        cafateira.suspender("2 semanas");
-                }
-                else{
-                        cafeteira.continua(true);
-                }
+            switch(statusDaLimpeza){
+              case 2: cafeteira.delete();
+               break;
+
+              case 1: cafateira.suspender("2 semanas");
+                break; 
+
+              default: cafeteira.continua(true);
+                break;
                 
-        }
+            }                            
+}
