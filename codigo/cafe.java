@@ -12,18 +12,15 @@ public CaféGrátis draco(Double doacaoAlunos, Pessoa você, CuidarDaCafeteira s
           
                 if(você.desculpa = "mas quando eu cheguei já estava pronto, eu só bebi"){
                     nãoImporta.limpaMesmoAssim = true;
-                    cafeteira.limpeza = você.limparCafeteira();
                 }
 
                 if(você.desculpa = "mas quando eu cheguei já estava sujo"){
                     nãoImporta.limpaMesmoAssim = true;
-                    cafeteira.limpeza = você.limparCafeteira();
                     você.chamarAtençãoDeQuemDeixouSujo();
-                }
-                else {
+                } else {
                     nãoImporta.limpaMesmoAssim = true;
-                    cafeteira.limpeza = você.limparCafeteira();
                 }
+            }
 
             if(cafeteira.limpeza == true){
                 statusDaLimpeza--;
